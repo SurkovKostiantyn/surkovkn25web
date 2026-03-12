@@ -13,67 +13,159 @@
   </head>
   <body>
     <header>
-      <h1>HEADER H1 - заголовок 1 рівня</h1>
-      <div>
-        <img src="https://picsum.photos/1200/200" alt="BANNER" title="BANNER" />
-      </div>
+      <h1>MY PORTFOLIO</h1>
       <nav>
         <ul>
           <li>
-            <a href="/">ГОЛОВНА</a>
+            <a href="#achievments"> Досягнення </a>
           </li>
           <li>
-            <a href="about.html">ПРО МЕНЕ</a>
+            <a href="#targets">Цілі</a>
           </li>
           <li>
-            <a href="gallery.html">ГАЛЕРЕЯ</a>
-          </li>
-          <li>
-            <a href="#footer">КОНТАКТИ</a>
+            <a href="#contacts"> Контакти </a>
           </li>
         </ul>
       </nav>
+      <div>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="https://picsum.photos/1200/300"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="https://picsum.photos/800/400"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="https://picsum.photos/600/600"
+          />
+          <img src="https://picsum.photos/1400/400" style="width: auto" />
+        </picture>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h2>Мої останні досягнення</h2>
+      <!-- Секція 1 мої досягнення -->
+      <section id="achievments">
         <article>
-          <h3>Досягнення 1</h3>
-          <p>Виконано лабораторну роботу №1</p>
-          <a href="#">Детальніше</a>
+          <h2>Досягнення 1</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            minima aperiam excepturi dolore exercitationem nisi eligendi sint
+            obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
+            rerum inventore eum corrupti vero velit quis? Praesentium fuga
+            reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
+            tempora perferendis quos odio rerum! Quisquam, minus magni.
+          </p>
+          <p>
+            <i> дата отримання: 12.03.26 </i>
+          </p>
+          <div>
+            <button type="button">Детальніше</button>
+          </div>
+        </article>
+        <article>
+          <h2>Досягнення 2</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            minima aperiam excepturi dolore exercitationem nisi eligendi sint
+            obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
+            rerum inventore eum corrupti vero velit quis? Praesentium fuga
+            reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
+            tempora perferendis quos odio rerum! Quisquam, minus magni.
+          </p>
+          <p>
+            <i> дата отримання: 12.03.26 </i>
+          </p>
+          <div>
+            <button type="button">Детальніше</button>
+          </div>
+        </article>
+        <article>
+          <h2>Досягнення 3</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            minima aperiam excepturi dolore exercitationem nisi eligendi sint
+            obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
+            rerum inventore eum corrupti vero velit quis? Praesentium fuga
+            reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
+            tempora perferendis quos odio rerum! Quisquam, minus magni.
+          </p>
+          <p>
+            <i> дата отримання: 12.03.26 </i>
+          </p>
+          <div>
+            <button type="button">Детальніше</button>
+          </div>
         </article>
       </section>
-      <section>
-        <h2>Мої наступні цілі</h2>
+
+      <!-- Секція 2 мої цілі -->
+      <section id="targets">
         <article>
-          <h3>Ціль 1</h3>
-          <p>Виконати лабораторну роботу №2</p>
-          <a href="#">Детальніше</a>
+          <h2>Ціль 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            eum velit iure explicabo quos? Tempora in exercitationem
+            reprehenderit ipsum dignissimos.
+          </p>
+          <p><i>дедлайн: 2027</i></p>
         </article>
+        <article>
+          <h2>Ціль 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            eum velit iure explicabo quos? Tempora in exercitationem
+            reprehenderit ipsum dignissimos.
+          </p>
+          <p><i>дедлайн: 2027</i></p>
+        </article>
+      </section>
+
+      <section id="gallery">
+        <img src="https://picsum.photos/400/400" alt="image1" />
+        <img src="https://picsum.photos/400/400" alt="image2" />
+        <img src="https://picsum.photos/400/400" alt="image3" />
       </section>
     </main>
+
+    <!-- Бічне меню -->
     <aside>
-      <h2>Бічне меню ASIDE</h2>
+      <h2>Бічне меню</h2>
       <ul>
-        <li><a href="#">Посилання 1</a></li>
-        <li><a href="#">Посилання 2</a></li>
-        <li><a href="#">Посилання 3</a></li>
-        <li><a href="#">Посилання 4</a></li>
+        <li>пункт 1</li>
+        <li>пункт 2</li>
+        <li>пункт 3</li>
       </ul>
     </aside>
-    <footer id="footer">
-      <p>FOOTER: &copy; 2026 KN-25</p>
-      <ul>
-        <li>Phone: 066123456789</li>
-        <li>Email: email@email.com</li>
-        <li>Address: 123 Main St, Anytown, USA</li>
-      </ul>
-      <form action="">
-        <label for="email">Ваша електронна пошта:</label>
-        <input type="email" name="email" id="email" />
-        <input type="button" value="Підписатися" />
-      </form>
+
+    <footer>
+      <div>
+        <!-- форма опитування -->
+        <form>
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Введіть пошту"
+            />
+          </label>
+          <input type="button" value="Підписатись на розсилку" />
+        </form>
+      </div>
+
+      <div>
+        <!-- контакти-->
+        <ul id="contacts">
+          <li>0661234567</li>
+          <li>email@example.com</li>
+        </ul>
+      </div>
+
+      <p>&copy; My portfolio</p>
     </footer>
   </body>
 </html>
