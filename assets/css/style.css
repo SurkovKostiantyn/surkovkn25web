@@ -1,0 +1,107 @@
+:root {
+  /* змінні, які можна використовувати в усьому документі */
+  --primary-color: #2563eb; /* Ваш фірмовий синій */
+  --primary-color-hover: #81a2ea; /* Ваш фірмовий синій при наведенні на елемент */
+  --accent-color: #f59e0b; /* Акцентний помаранчевий */
+}
+* {
+  margin: 0; /* скидаємо відступи */
+  padding: 0; /* скидаємо відступи */
+  box-sizing: border-box; /* робимо так, щоб відступи не впливали на розмір */
+  text-decoration: none !important; /* скидаємо оформлення посилань */
+  list-style: none !important; /* скидаємо оформлення списків */
+  border: 0; /* скидаємо рамки */
+  outline: none; /* скидаємо рамки */
+  text-align: justify;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  background-color: #badee6;
+  /* Для прикладу застосуємо фонове зображення */
+  background-image: url("../img/bg.png"); /* шлях до зображення */
+  background-size: 200px 200px; /* розмір зображення */
+  background-repeat: repeat-y; /* повторення зображення */
+  background-position: center; /* положення зображення */
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: aliceblue;
+}
+
+.text-logo {
+  font-family: "Rubik Wet Paint", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-simple {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.text-simple-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--primary-color); /* використання змінної */
+}
+
+section {
+  width: 1000px;
+  /* margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; */
+
+  margin: 20px auto 20px auto; /* короткий запис */
+}
+
+.text-block {
+  /* блок з текстом */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+button {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color-hover);
+}

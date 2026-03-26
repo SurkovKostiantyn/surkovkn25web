@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Моє портфоліо</title>
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
-      <h1>MY PORTFOLIO</h1>
-      <nav>
+      <h1 class="text-logo">MY PORTFOLIO</h1>
+      <nav class="nav">
         <ul>
           <li>
             <a href="#achievments"> Досягнення </a>
@@ -27,8 +30,8 @@
           </li>
         </ul>
       </nav>
-      <div>
-        <picture>
+      <div class="banner">
+        <!-- <picture>
           <source
             media="(min-width: 1200px)"
             srcset="https://picsum.photos/1200/300"
@@ -46,17 +49,18 @@
             style="width: auto"
             alt="banner"
           />
-        </picture>
+        </picture> -->
+        <img src="https://picsum.photos/1200/300" alt="banner" />
       </div>
     </header>
 
     <main>
       <!-- Секція 1 мої досягнення -->
       <section id="achievments">
-        <h2>Мої досягнення</h2>
+        <h2 class="text-simple-bold">Мої досягнення</h2>
         <article>
-          <h3>Досягнення 1</h3>
-          <p>
+          <h3 class="text-simple-bold">Досягнення 1</h3>
+          <p class="text-block">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
             minima aperiam excepturi dolore exercitationem nisi eligendi sint
             obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
@@ -72,8 +76,8 @@
           </div>
         </article>
         <article>
-          <h3>Досягнення 2</h3>
-          <p>
+          <h3 class="text-simple-bold">Досягнення 2</h3>
+          <p class="text-block">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
             minima aperiam excepturi dolore exercitationem nisi eligendi sint
             obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
@@ -89,8 +93,8 @@
           </div>
         </article>
         <article>
-          <h3>Досягнення 3</h3>
-          <p>
+          <h3 class="text-simple-bold">Досягнення 3</h3>
+          <p class="text-block">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
             minima aperiam excepturi dolore exercitationem nisi eligendi sint
             obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
@@ -109,10 +113,10 @@
 
       <!-- Секція 2 мої цілі -->
       <section id="targets">
-        <h2>Мої цілі</h2>
+        <h2 class="text-simple-bold">Мої цілі</h2>
         <article>
           <h3>Ціль 1</h3>
-          <p>
+          <p class="text-block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             eum velit iure explicabo quos? Tempora in exercitationem
             reprehenderit ipsum dignissimos.
@@ -120,8 +124,8 @@
           <p><i>дедлайн: 2027</i></p>
         </article>
         <article>
-          <h3>Ціль 2</h3>
-          <p>
+          <h3 class="text-simple-bold">Ціль 2</h3>
+          <p class="text-block">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             eum velit iure explicabo quos? Tempora in exercitationem
             reprehenderit ipsum dignissimos.
@@ -131,7 +135,7 @@
       </section>
 
       <section id="gallery">
-        <h2>Галерея</h2>
+        <h2 class="text-simple-bold">Галерея</h2>
         <img src="https://picsum.photos/400/400" alt="image1" />
         <img src="https://picsum.photos/400/400" alt="image2" />
         <img src="https://picsum.photos/400/400" alt="image3" />
@@ -153,6 +157,7 @@
         <!-- форма опитування -->
         <form>
           <label for="email">
+            Поле для вводу пошти:
             <input
               type="email"
               name="email"
