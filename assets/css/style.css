@@ -3,6 +3,8 @@
   --primary-color: #2563eb; /* Ваш фірмовий синій */
   --primary-color-hover: #81a2ea; /* Ваш фірмовий синій при наведенні на елемент */
   --accent-color: #f59e0b; /* Акцентний помаранчевий */
+  --footer-color: #000000;
+  --footer-text-color: #ffffff;
 }
 * {
   margin: 0; /* скидаємо відступи */
@@ -120,4 +122,47 @@ button:hover {
   flex-wrap: wrap;
   align-content: center;
   gap: 20px;
+}
+
+.nav-bar-item-link:hover {
+  background-color: var(--primary-color);
+  color: var(--footer-text-color);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--footer-color);
+  color: var(--footer-text-color);
+  text-align: center;
+}
+
+.footer-form {
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#contacts {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.copy {
+  margin: 0 auto;
 }
