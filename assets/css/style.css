@@ -235,6 +235,20 @@ input {
   margin: 0 auto;
 }
 
+#gallery img {
+  width: 100%;
+  transform: scale(0.95);
+  object-fit: cover;
+}
+
+#gallery img:hover {
+  transform: scale(1.0);
+  transition: all 0.5s ease;
+  box-shadow: 5px 10px 8px 0px #888888;
+}
+
+
+
 @media (max-width: 1200px) {
   section {
     grid-template-columns: 1fr 1fr;
@@ -247,18 +261,26 @@ input {
 
   /* Стилізація випадаючого меню для мобільних пристроїв */
   .nav-bar {
-    display: none; /* Ховаємо меню за замовчуванням */
-    position: absolute; /* Позиціонуємо відносно шапки (header) */
-    top: 100%; /* Розміщуємо рівно під шапкою */
+    display: none;
+    /* Ховаємо меню за замовчуванням */
+    position: absolute;
+    /* Позиціонуємо відносно шапки (header) */
+    top: 100%;
+    /* Розміщуємо рівно під шапкою */
     left: 0;
-    width: 100%; /* Розтягуємо на всю ширину екрана */
+    width: 100%;
+    /* Розтягуємо на всю ширину екрана */
     background-color: aliceblue;
-    flex-direction: column; /* Елементи меню стають один під одним */
-    align-items: stretch; /* Елементи розтягуються на всю ширину */
+    flex-direction: column;
+    /* Елементи меню стають один під одним */
+    align-items: stretch;
+    /* Елементи розтягуються на всю ширину */
     padding: 20px;
     gap: 10px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); /* Тінь знизу для ефекту накладання */
-    z-index: 99; /* Щоб меню було поверх іншого контенту */
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    /* Тінь знизу для ефекту накладання */
+    z-index: 99;
+    /* Щоб меню було поверх іншого контенту */
   }
 
   /* ГОЛОВНА ЛОГІКА: якщо чекбокс натиснутий (checked), показуємо список .nav-bar */
