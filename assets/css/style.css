@@ -1,21 +1,38 @@
 :root {
   /* змінні, які можна використовувати в усьому документі */
-  --primary-color: #2563eb; /* Ваш фірмовий синій */
-  --primary-color-hover: #81a2ea; /* Ваш фірмовий синій при наведенні на елемент */
-  --accent-color: #f59e0b; /* Акцентний помаранчевий */
+  --primary-color: #2563eb;
+  /* Ваш фірмовий синій */
+  --primary-color-hover: #81a2ea;
+  /* Ваш фірмовий синій при наведенні на елемент */
+  --accent-color: #f59e0b;
+  /* Акцентний помаранчевий */
   --footer-color: #000000;
   --footer-text-color: #ffffff;
 }
+
 * {
-  margin: 0; /* скидаємо відступи */
-  padding: 0; /* скидаємо відступи */
-  box-sizing: border-box; /* робимо так, щоб відступи не впливали на розмір */
-  text-decoration: none !important; /* скидаємо оформлення посилань */
-  list-style: none !important; /* скидаємо оформлення списків */
-  border: 0; /* скидаємо рамки */
-  outline: none; /* скидаємо рамки */
+  margin: 0;
+  /* скидаємо відступи */
+  padding: 0;
+  /* скидаємо відступи */
+  box-sizing: border-box;
+  /* робимо так, щоб відступи не впливали на розмір */
+  text-decoration: none !important;
+  /* скидаємо оформлення посилань */
+  list-style: none !important;
+  /* скидаємо оформлення списків */
+  border: 0;
+  /* скидаємо рамки */
+  outline: none;
+  /* скидаємо рамки */
   text-align: justify;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -27,11 +44,25 @@ body {
   line-height: 150%;
   background-color: #badee6;
   /* Для прикладу застосуємо фонове зображення */
-  background-image: url("../img/bg.png"); /* шлях до зображення */
-  background-size: 200px 200px; /* розмір зображення */
-  background-repeat: repeat-y; /* повторення зображення */
-  background-position: center; /* положення зображення */
+  /* background-image: url("../img/bg.png"); */
+  /* шлях до зображення */
+  /* background-size: 200px 200px; */
+  /* розмір зображення */
+  /* background-repeat: repeat-y; */
+  /* повторення зображення */
+  /* background-position: center; */
+  /* положення зображення */
   position: relative;
+}
+
+aside {
+  width: 200px;
+  background-color: aliceblue;
+  padding: 12px 14px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 header {
@@ -66,17 +97,25 @@ h1,
 h2,
 h3 {
   text-align: center;
-  color: var(--primary-color); /* використання змінної */
+  color: var(--primary-color);
+  margin: 10px auto;
 }
 
 section {
-  width: 1000px;
-  /* margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 20px auto;
+}
 
-  margin: 20px auto 20px auto; /* короткий запис */
+article {
+  outline: 2px solid black;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: lightcyan;
 }
 
 .text-block {
@@ -87,7 +126,7 @@ section {
 
 .banner {
   width: 100%;
-  margin-top: 10px;
+
 }
 
 .banner img {
@@ -111,9 +150,11 @@ button:hover {
 .header {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
+  padding: 10px 20px;
 }
 
 .nav-bar {
@@ -122,6 +163,16 @@ button:hover {
   flex-wrap: wrap;
   align-content: center;
   gap: 20px;
+}
+
+.nav-bar-item {
+  padding: 12px 14px;
+  outline: 2px solid black;
+  border-radius: 10px;
+}
+
+.nav-bar-item:hover {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .nav-bar-item-link:hover {
@@ -140,7 +191,8 @@ footer {
 }
 
 .footer-form {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -165,4 +217,28 @@ input {
 
 .copy {
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .nav-bar-item {
+    padding: 6px 7px;
+  }
+
+  aside {
+    display: none;
+  }
 }
