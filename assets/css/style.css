@@ -55,16 +55,6 @@ body {
   position: relative;
 }
 
-aside {
-  width: 200px;
-  background-color: aliceblue;
-  padding: 12px 14px;
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 header {
   background-color: aliceblue;
 }
@@ -155,7 +145,25 @@ button:hover {
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
+  position: relative;
 }
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.burger-menu span {
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
 
 .nav-bar {
   display: flex;
@@ -169,16 +177,24 @@ button:hover {
   padding: 12px 14px;
   outline: 2px solid black;
   border-radius: 10px;
+  transition: all 0.3s ease;
 }
+
+.nav-bar-item-link {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
 
 .nav-bar-item:hover {
   box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-color);
 }
 
-.nav-bar-item-link:hover {
-  background-color: var(--primary-color);
-  color: var(--footer-text-color);
+.nav-bar-item:hover .nav-bar-item-link {
+  color: var(--footer-text-color) !important;
 }
+
 
 footer {
   display: flex;
@@ -219,11 +235,61 @@ input {
   margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   section {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Показуємо іконку бургера (три лінії), яка на десктопі була прихована */
+  .burger-menu {
+    display: flex;
+  }
+
+  /* Стилізація випадаючого меню для мобільних пристроїв */
+  .nav-bar {
+    display: none; /* Ховаємо меню за замовчуванням */
+    position: absolute; /* Позиціонуємо відносно шапки (header) */
+    top: 100%; /* Розміщуємо рівно під шапкою */
+    left: 0;
+    width: 100%; /* Розтягуємо на всю ширину екрана */
+    background-color: aliceblue;
+    flex-direction: column; /* Елементи меню стають один під одним */
+    align-items: stretch; /* Елементи розтягуються на всю ширину */
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); /* Тінь знизу для ефекту накладання */
+    z-index: 99; /* Щоб меню було поверх іншого контенту */
+  }
+
+  /* ГОЛОВНА ЛОГІКА: якщо чекбокс натиснутий (checked), показуємо список .nav-bar */
+  #menu-toggle:checked~.nav-bar {
+    display: flex;
+  }
+
+  /* Кожен пункт меню на мобільних пристроях займає всю ширину */
+  .nav-bar-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* АНІМАЦІЯ ІКОНКИ БУРГЕРА ПРИ ВІДКРИТТІ: */
+
+  /* 1. Верхня лінія повертається на 45 градусів і зміщується, стаючи частиною "X" */
+  #menu-toggle:checked+.burger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  /* 2. Середня лінія зникає */
+  #menu-toggle:checked+.burger-menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* 3. Нижня лінія повертається на -45 градусів, завершуючи символ "X" */
+  #menu-toggle:checked+.burger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
 }
+
 
 @media (max-width: 600px) {
   section {
@@ -238,7 +304,4 @@ input {
     padding: 6px 7px;
   }
 
-  aside {
-    display: none;
-  }
 }
