@@ -149,6 +149,31 @@
           required
         />
 
+        <div class="checkbox-group">
+          <input type="checkbox" name="show-date" id="show-date" />
+          <label for="show-date">Показувати дату на сторінці</label>
+        </div>
+
+        <p>Виберіть тип акаунту:</p>
+        <div class="radio-group">
+          <input type="radio" name="account-type" id="personal" value="personal" checked />
+          <label for="personal">Особистий</label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" name="account-type" id="business" value="business" />
+          <label for="business">Бізнес</label>
+        </div>
+
+        <label for="source">Звідки ви про нас дізналися?</label>
+        <select name="source" id="source">
+          <option value="none">-- Оберіть варіант --</option>
+          <option value="friends">Від друзів</option>
+          <option value="social">Соцмережі</option>
+          <option value="ads">Реклама</option>
+          <option value="other">Інше</option>
+        </select>
+
+
         <input type="button" value="Зареєструватись" />
         <input type="button" value="Скасувати" />
       </form>
