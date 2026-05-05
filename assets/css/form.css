@@ -1,0 +1,48 @@
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+input[type="button"]:hover {
+  background-color: #e0e0e0;
+}
+
+.footer-form {
+  max-width: 100%;
+  margin: 10px 0;
+  border: none;
+  padding: 0;
+}
