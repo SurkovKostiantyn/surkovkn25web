@@ -1,55 +1,58 @@
 <!doctype html>
 <html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моє портфоліо</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Моє портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body>
+    <header class="header">
+      <h1 class="text-logo">MY PORTFOLIO</h1>
 
-<body>
-  <header class="header">
-    <h1 class="text-logo">MY PORTFOLIO</h1>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+      <label for="menu-toggle" class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
-    <label for="menu-toggle" class="burger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <ul class="nav-bar">
+        <li class="nav-bar-item">
+          <a href="#achievments" class="nav-bar-item-link"> Досягнення </a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#targets" class="nav-bar-item-link">Цілі</a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#contacts" class="nav-bar-item-link"> Контакти </a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#gallery" class="nav-bar-item-link"> Галерея </a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#feedback" class="nav-bar-item-link"> Зворотний зв'язок </a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="#about" class="nav-bar-item-link"> Про мене </a>
+        </li>
+        <li class="nav-bar-item">
+          <a href="./register.html" class="nav-bar-item-link"> Реєстрація </a>
+        </li>
+      </ul>
+    </header>
 
-    <ul class="nav-bar">
-      <li class="nav-bar-item">
-        <a href="#achievments" class="nav-bar-item-link"> Досягнення </a>
-      </li>
-      <li class="nav-bar-item">
-        <a href="#targets" class="nav-bar-item-link">Цілі</a>
-      </li>
-      <li class="nav-bar-item">
-        <a href="#contacts" class="nav-bar-item-link"> Контакти </a>
-      </li>
-      <li class="nav-bar-item">
-        <a href="#gallery" class="nav-bar-item-link"> Галерея </a>
-      </li>
-      <li class="nav-bar-item">
-        <a href="#feedback" class="nav-bar-item-link"> Зворотний зв'язок </a>
-      </li>
-      <li class="nav-bar-item">
-        <a href="#about" class="nav-bar-item-link"> Про мене </a>
-      </li>
-    </ul>
-  </header>
-
-  <div class="banner">
-    <!-- <picture>
+    <div class="banner">
+      <!-- <picture>
           <source
             media="(min-width: 1200px)"
             srcset="https://picsum.photos/1200/300"
@@ -68,123 +71,125 @@
             alt="banner"
           />
         </picture> -->
-    <img src="https://picsum.photos/1200/300" alt="banner" />
-  </div>
+      <img src="https://picsum.photos/1200/300" alt="banner" />
+    </div>
 
-  <main>
-    <!-- Секція 1 мої досягнення -->
-    <h2 class="text-simple-bold">Мої досягнення</h2>
-    <section id="achievments">
-      <article>
-        <h3 class="text-simple-bold">Досягнення 1</h3>
-        <p class="text-block">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          minima aperiam excepturi dolore exercitationem nisi eligendi sint
-          obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
-          rerum inventore eum corrupti vero velit quis? Praesentium fuga
-          reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
-          tempora perferendis quos odio rerum! Quisquam, minus magni.
-        </p>
-        <p>
-          <i> дата отримання: 12.03.26 </i>
-        </p>
-        <div>
-          <button type="button">Детальніше</button>
-        </div>
-      </article>
-      <article>
-        <h3 class="text-simple-bold">Досягнення 2</h3>
-        <p class="text-block">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          minima aperiam excepturi dolore exercitationem nisi eligendi sint
-          obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
-          rerum inventore eum corrupti vero velit quis? Praesentium fuga
-          reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
-          tempora perferendis quos odio rerum! Quisquam, minus magni.
-        </p>
-        <p>
-          <i> дата отримання: 12.03.26 </i>
-        </p>
-        <div>
-          <button type="button">Детальніше</button>
-        </div>
-      </article>
-      <article>
-        <h3 class="text-simple-bold">Досягнення 3</h3>
-        <p class="text-block">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
-          minima aperiam excepturi dolore exercitationem nisi eligendi sint
-          obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
-          rerum inventore eum corrupti vero velit quis? Praesentium fuga
-          reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
-          tempora perferendis quos odio rerum! Quisquam, minus magni.
-        </p>
-        <p>
-          <i> дата отримання: 12.03.26 </i>
-        </p>
-        <div>
-          <button type="button">Детальніше</button>
-        </div>
-      </article>
-    </section>
+    <main>
+      <!-- Секція 1 мої досягнення -->
+      <h2 class="text-simple-bold">Мої досягнення</h2>
+      <section id="achievments">
+        <article>
+          <h3 class="text-simple-bold">Досягнення 1</h3>
+          <p class="text-block">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            minima aperiam excepturi dolore exercitationem nisi eligendi sint
+            obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
+            rerum inventore eum corrupti vero velit quis? Praesentium fuga
+            reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
+            tempora perferendis quos odio rerum! Quisquam, minus magni.
+          </p>
+          <p>
+            <i> дата отримання: 12.03.26 </i>
+          </p>
+          <div>
+            <button type="button">Детальніше</button>
+          </div>
+        </article>
+        <article>
+          <h3 class="text-simple-bold">Досягнення 2</h3>
+          <p class="text-block">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            minima aperiam excepturi dolore exercitationem nisi eligendi sint
+            obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
+            rerum inventore eum corrupti vero velit quis? Praesentium fuga
+            reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
+            tempora perferendis quos odio rerum! Quisquam, minus magni.
+          </p>
+          <p>
+            <i> дата отримання: 12.03.26 </i>
+          </p>
+          <div>
+            <button type="button">Детальніше</button>
+          </div>
+        </article>
+        <article>
+          <h3 class="text-simple-bold">Досягнення 3</h3>
+          <p class="text-block">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            minima aperiam excepturi dolore exercitationem nisi eligendi sint
+            obcaecati perspiciatis, architecto, ex et voluptates distinctio hic,
+            rerum inventore eum corrupti vero velit quis? Praesentium fuga
+            reiciendis dicta nihil fugit, dignissimos tenetur illo, maiores
+            tempora perferendis quos odio rerum! Quisquam, minus magni.
+          </p>
+          <p>
+            <i> дата отримання: 12.03.26 </i>
+          </p>
+          <div>
+            <button type="button">Детальніше</button>
+          </div>
+        </article>
+      </section>
 
-    <!-- Секція 2 мої цілі -->
-    <h2 class="text-simple-bold">Мої цілі</h2>
-    <section id="targets">
-      <article>
-        <h3 class="text-simple-bold">Ціль 1</h3>
-        <p class="text-block">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          eum velit iure explicabo quos? Tempora in exercitationem
-          reprehenderit ipsum dignissimos.
-        </p>
-        <p><i>дедлайн: 2027</i></p>
-      </article>
-      <article>
-        <h3 class="text-simple-bold">Ціль 2</h3>
-        <p class="text-block">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          eum velit iure explicabo quos? Tempora in exercitationem
-          reprehenderit ipsum dignissimos.
-        </p>
-        <p><i>дедлайн: 2027</i></p>
-      </article>
-      <article>
-        <h3 class="text-simple-bold">Ціль 3</h3>
-        <p class="text-block">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          eum velit iure explicabo quos? Tempora in exercitationem
-          reprehenderit ipsum dignissimos.
-        </p>
-        <p><i>дедлайн: 2027</i></p>
-      </article>
-    </section>
+      <!-- Секція 2 мої цілі -->
+      <h2 class="text-simple-bold">Мої цілі</h2>
+      <section id="targets">
+        <article>
+          <h3 class="text-simple-bold">Ціль 1</h3>
+          <p class="text-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            eum velit iure explicabo quos? Tempora in exercitationem
+            reprehenderit ipsum dignissimos.
+          </p>
+          <p><i>дедлайн: 2027</i></p>
+        </article>
+        <article>
+          <h3 class="text-simple-bold">Ціль 2</h3>
+          <p class="text-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            eum velit iure explicabo quos? Tempora in exercitationem
+            reprehenderit ipsum dignissimos.
+          </p>
+          <p><i>дедлайн: 2027</i></p>
+        </article>
+        <article>
+          <h3 class="text-simple-bold">Ціль 3</h3>
+          <p class="text-block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            eum velit iure explicabo quos? Tempora in exercitationem
+            reprehenderit ipsum dignissimos.
+          </p>
+          <p><i>дедлайн: 2027</i></p>
+        </article>
+      </section>
 
-    <h2 class="text-simple-bold">Галерея</h2>
-    <section id="gallery">
+      <h2 class="text-simple-bold">Галерея</h2>
+      <section id="gallery">
+        <img src="https://picsum.photos/400/400" alt="image1" />
+        <img src="https://picsum.photos/400/400" alt="image2" />
+        <img src="https://picsum.photos/400/400" alt="image3" />
+      </section>
+    </main>
 
-      <img src="https://picsum.photos/400/400" alt="image1" />
-      <img src="https://picsum.photos/400/400" alt="image2" />
-      <img src="https://picsum.photos/400/400" alt="image3" />
-    </section>
-  </main>
+    <footer>
+      <!-- форма опитування -->
+      <form class="footer-form">
+        <label for="email"> Поле для вводу пошти: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Введіть пошту"
+        />
+        <input type="button" value="Підписатись на розсилку" />
+      </form>
 
+      <ul id="contacts">
+        <li>0661234567</li>
+        <li>email@example.com</li>
+      </ul>
 
-  <footer>
-    <!-- форма опитування -->
-    <form class="footer-form">
-      <label for="email"> Поле для вводу пошти: </label>
-      <input type="email" name="email" id="email" placeholder="Введіть пошту" />
-      <input type="button" value="Підписатись на розсилку" />
-    </form>
-
-    <ul id="contacts">
-      <li>0661234567</li>
-      <li>email@example.com</li>
-    </ul>
-
-    <p class="copy">&copy; My portfolio</p>
-  </footer>
-</body>
-
+      <p class="copy">&copy; My portfolio</p>
+    </footer>
+  </body>
 </html>
